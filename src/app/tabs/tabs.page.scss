@@ -1,1 +1,16 @@
+ion-tab-bar{
+    --background: rgb(0, 0, 0);
+}
 
+ion-tab-button{
+    --color: pink;
+    --color-selected: #ff0800;
+}
+
+ion-icon:hover{
+    color: rgb(255, 136, 136);
+}
+
+ion-label{
+    color: rgb(255, 223, 223);
+}

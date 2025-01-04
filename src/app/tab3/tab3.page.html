@@ -1,17 +1,29 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Nuestros momentos
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+<ion-content>
+  <div class="moment-container" *ngIf="currentMoment">
+    <ng-container [ngSwitch]="currentMoment.type">
+      <div class="imagen" *ngSwitchCase="'foto'">
+        <ion-img [src]="currentMoment.content"></ion-img>
+        <p>{{ currentMoment.description }}</p>
+      </div>
+      <div class="trivia" *ngSwitchCase="'trivia'">
+        <h2>{{ currentMoment.content }}</h2>
+        <p class="answer" *ngIf="currentMoment.answer">{{ currentMoment.answer }}</p>
+      </div>
+      <div class="mensaje" *ngSwitchCase="'mensaje'">
+        <p>{{ currentMoment.content }}</p>
+      </div>
+    </ng-container>
+  </div>
+  <div class="boton">
+  <ion-button class="botom"  (click)="showRandomMoment()">Tócame bb</ion-button>
+  </div>
+  
 </ion-content>

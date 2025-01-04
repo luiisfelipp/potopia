@@ -1,0 +1,83 @@
+ion-content {
+  --background: linear-gradient(to bottom, #d2bdb8, pink); 
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 260px; /* Ancho máximo para las tarjetas */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra para dar profundidad */
+  border-radius: 12px;
+  background-color: #000000; /* Color burdeos suave para las tarjetas */
+  overflow: hidden; /* Evita que las imágenes o contenido se desborden */
+}
+
+.tarj-jider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tarj-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ion-button {
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.botom {
+  color: #000000; /* Color de texto del botón */
+  --background: #25d765; /* Rosa suave para el fondo del botón */
+  border-radius: 20px;
+}
+
+/* Imagen de las tarjetas */
+.media-container {
+  position: relative;
+  width: 130%; /* Hace la imagen un poco más grande */
+  height: 180px; /* Altura fija */
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+/* Descripción del momento */
+p {
+  font-size: 1rem;
+  color: #fff7f7;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+  padding: 10px;
+  border-radius: 8px;
+}

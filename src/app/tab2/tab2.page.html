@@ -1,17 +1,22 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Nuestra línea de tiempo
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <div class="timeline">
+    <div *ngFor="let event of events; let i = index" class="timeline-event" [class.alternate]="i % 2 !== 0">
+      <div class="timeline-point" (click)="showDetails(event)">
+        <img [src]="event.icon" alt="Event Icon" />
+      </div>
+      <div class="timeline-content">
+        <h3>{{ event.title }}</h3>
+        <p>{{ event.date }}</p>
+      </div>
+    </div>
+    <div class="timeline-line"></div>
+  </div>  
 </ion-content>

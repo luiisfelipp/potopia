@@ -1,0 +1,94 @@
+ion-content {
+  --background: linear-gradient(to bottom, #ffedfc, #ffd5d5);
+}
+
+/* Contenedor de la línea de tiempo */
+.timeline {
+  position: relative;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Línea central de la línea de tiempo */
+.timeline-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background-color: #ffb3b3;
+  z-index: -1;
+}
+
+/* Eventos en la línea de tiempo */
+.timeline-event {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.timeline-event.alternate {
+  justify-content: flex-end;
+}
+
+/* Punto en la línea de tiempo */
+.timeline-point {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffcccb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-point img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.timeline-point:hover {
+  transform: scale(1.2);
+}
+
+/* Contenido de los eventos */
+.timeline-content {
+  max-width: 200px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.timeline-content h3 {
+  font-size: 1.2rem;
+  color: #e91e63;
+  margin-bottom: 5px;
+}
+
+.timeline-content p {
+  font-size: 0.9rem;
+  color: #757575;
+}
+
+/* Espaciado entre punto y contenido */
+.timeline-event:not(.alternate) .timeline-content {
+  margin-left: 20px;
+}
+
+.timeline-event.alternate .timeline-content {
+  margin-right: 20px;
+}

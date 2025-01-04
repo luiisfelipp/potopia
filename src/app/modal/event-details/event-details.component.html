@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ event.title }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismissModal()">Cerrar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="modal-content">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{ event.title }}</ion-card-title>
+      <ion-card-subtitle>{{ event.date }}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{ event.details }}</p>
+      <ion-img [src]="event.icon"></ion-img>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
