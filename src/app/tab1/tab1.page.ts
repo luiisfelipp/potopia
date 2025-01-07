@@ -15,31 +15,31 @@ export class Tab1Page {
       artist: 'Mac Miller',
       img: "assets/cong.jpg",
       url: 'https://open.spotify.com/intl-es/track/1OubIZ0ARYCUq5kceYUQiO?si=ac258cd91cba42bf',
-      text: "Love, love, love, love, ¿cómo no acordarme de ti con esta canción y el albúm completo, si eres tan... divine feminine...",
+      text: "Love, love, love, mi divine feminine, ¿cómo no acordarme de ti con esta canción y su albúm? Eres demasiado divina para ser solo mía.",
       showText: false
     },
     {
-      title: 'Canción Especial 2',
-      artist: 'Artista 2',
-      img: "assets/potopia.png",
-      url: 'https://open.spotify.com/track/ID2',
-      text: "123",
+      title: 'cómo dormiste?',
+      artist: 'Rels b',
+      img: "assets/comodormiste.PNG",
+      url: 'https://open.spotify.com/intl-es/track/3fjN3y5x4hN53rykAN2LHQ?si=2fafe16e4fce4804',
+      text: "Cómo dormiste bebé? me soñaste? anhelo el día en que despierte junto a tí, sabiendo que al siguiente te volveré a preguntar, cómo dormiste potito? 💕",
       showText: false
     },
     {
-      title: 'Canción Especial 3',
-      artist: 'Artista 3',
-      img: "assets/potopia.png",
+      title: 'Sweet',
+      artist: 'Cygarettes after sex',
+      img: "assets/ciga.jpg",
+      url: 'https://open.spotify.com/intl-es/track/6ilc4vQcwMPlvAHFfsTGng?si=c19eb737029447f9',
+      text: "Me encanta la paz que me das, es algo mágico. Cada vez que escuchaba esta canción soñaba con una paz que no esperaba encontrar nunca, hasta que te conocí.",
+      showText: false
+    },
+    {
+      title: 'Contigo',
+      artist: 'Carlita Morrison',
+      img: "assets/contigo.png",
       url: 'https://open.spotify.com/track/ID3',
-      text: "123",
-      showText: false
-    },
-    {
-      title: 'Canción Especial 4',
-      artist: 'Artista 4',
-      img: "assets/potopia.png",
-      url: 'https://open.spotify.com/track/ID3',
-      text: "123",
+      text: "Mientras aún ni si quiera te pedía pololeo, escuchaba esta canción y me sentía tan loco por tí, agradezco demasiado a la vida el haberme encontrado contigo. Sigo aún más loco por tí",
       showText: false
     }
     // Agrega más canciones aquí

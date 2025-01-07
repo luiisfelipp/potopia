@@ -1,0 +1,57 @@
+ion-content {
+    --background: linear-gradient(to bottom, #d2bdb8, pink);
+  
+    .login-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 20px;
+    }
+  
+    .login-card {
+      width: 100%;
+      max-width: 400px;
+      background-color: #dbb8af; /* Color claro para el fondo de la tarjeta */
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+  
+    .input-item {
+      --background: #fff7f7; /* Fondo suave para los campos de texto */
+      border-radius: 8px;
+      margin-bottom: 15px;
+      color: #000000;
+    }
+  
+    .login-button {
+      --background: #c77b94; /* Color rosa oscuro */
+      --color: #fff;
+      border-radius: 20px;
+      margin-top: 15px;
+    }
+  
+    .helper-text {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #000000;
+    }
+  
+    .helper-text a {
+      color: #c77b94; /* Mismo rosa oscuro */
+      text-decoration: none;
+    }
+  
+    .helper-text a:hover {
+      text-decoration: underline;
+    }
+  }
+  

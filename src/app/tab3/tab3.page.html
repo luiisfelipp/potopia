@@ -13,9 +13,18 @@
         <ion-img [src]="currentMoment.content"></ion-img>
         <p>{{ currentMoment.description }}</p>
       </div>
+      
       <div class="trivia" *ngSwitchCase="'trivia'">
         <h2>{{ currentMoment.content }}</h2>
-        <p class="answer" *ngIf="currentMoment.answer">{{ currentMoment.answer }}</p>
+
+        <div *ngIf="!currentMoment.showAnswer">
+        <ion-button class="botom" (click)="showAnswer(currentMoment)">Mostrar respuesta</ion-button>
+        </div>
+
+        <div *ngIf="currentMoment.showAnswer">
+        <p class="answer" >{{ currentMoment.answer }}</p>
+        </div>
+
       </div>
       <div class="mensaje" *ngSwitchCase="'mensaje'">
         <p>{{ currentMoment.content }}</p>

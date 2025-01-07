@@ -1,0 +1,17 @@
+ion-content {
+    --background: linear-gradient(to bottom, #d2bdb8, pink); 
+  }
+  
+  .splash-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; 
+    margin-top: 70%;
+  }
+
+  
+  .logo {
+    max-width: 65%; 
+    max-height: 65%;
+  }
